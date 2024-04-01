@@ -1,3 +1,5 @@
+![Created with HTMX](images/createdwith.jpeg)
+
 # Go and HTMX
 
 This is a first pass at using HTMX based on a project from
@@ -26,11 +28,7 @@ when I can follow line by line and see the browser do each step in order. HTMX m
 see what's been done by inspecting the dom as you go. You can also hit `htmx.logAll()` in the
 browser console to see a detailed output log of what HTMX has done. This is extremely useful
 for me at this point in the process. By using this and inspecting the dom, you can see anything
-HTMX touches as part of its request, gets some kind of class added to it. That makes it easy
-to identify later in case you want to get fancy with things like hx-indicators.
-
-This seems to highlight the importance of fullstack engineering, where we simplify some of the
-magic of the frontend and get everyone talking on the backend. Let's use the backend for things
+HTMX touches as part of its request, gets some kind ohe frontend and get everyone talking on the backend. Let's use the backend for things
 like state and validation. Whether or not the backend is better or faster at those things, it
 simplifies your program because you don't have to duplicate code. Many professional projects I've
 worked on had state and validation on both client and server side. What if we didn't need to do

@@ -9,15 +9,15 @@
     <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
   </head>
   <body>
+    {{ template "header" . }}
     <div>
-      <img src="images/bars.svg" alt="HTMX" />
-    </div>
-    <div>
-      Count <span id="count">
+      This page has been viewed <span id="count">
         {{ template "count" . }}
       </span>
-      <button hx-target="#count" hx-post="/count">Count</button>
+      time(s). 
+      <button hx-target="#count" hx-post="/count">Cheat</button>
     </div>
+    {{ template "footer" . }}
   </body>
 </html>
 {{ end }}
