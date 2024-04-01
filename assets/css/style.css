@@ -1,0 +1,37 @@
+.htmx-indicator {
+  opacity:0;
+  transition: opacity 500ms ease-in;
+}
+.htmx-request .htmx-indicator{
+  opacity:1
+}
+.htmx-request.htmx-indicator{
+  opacity:1
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact.htmx-swapping {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.error {
+  color: red;
+}
+
+.flexy {
+  display: flex;
+}
+
+.trash-icon {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.bars {
+  width: 1rem;
+}

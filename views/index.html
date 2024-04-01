@@ -1,0 +1,28 @@
+{{ block "index" . }}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTMX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+  </head>
+  <body>
+    <div>
+      <img src="images/bars.svg" alt="HTMX" />
+    </div>
+    <div>
+      Count <span id="count">
+        {{ template "count" . }}
+      </span>
+      <button hx-target="#count" hx-post="/count">Count</button>
+    </div>
+  </body>
+</html>
+{{ end }}
+
+
+{{ block "count" . }}
+  {{ .Count }}
+{{ end }}
