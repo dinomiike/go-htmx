@@ -7,6 +7,8 @@ This is a first pass at using HTMX based on a project from
 backend, which is also new to me. They say it's easy to get started with. Let's see if
 I've been lied to.
 
+[Click here to visit the HTMX Webring!](https://htmx.org/webring/#)
+
 ## Goal
 
 Create a use case for HTMX and explore what it's capable of. At the end of this experiment,
