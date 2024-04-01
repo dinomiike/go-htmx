@@ -1,4 +1,4 @@
-![Created with HTMX](images/createdwith.jpeg)
+<img src="assets/images/createdwith.jpeg" alt="Created with HTMX" width="200">
 
 # Go and HTMX
 
