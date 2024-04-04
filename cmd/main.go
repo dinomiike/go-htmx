@@ -75,6 +75,9 @@ func newData() Data {
 		Contacts: []Contact{
 			newContact("John Doe", "johndoe@gmail.com"),
 			newContact("Jane Doe", "janedoe@gmail.com"),
+			newContact("Test User", "test@gmail.com"),
+			newContact("Dog", "dog@gmail.com"),
+			newContact("Cat", "cat@gmail.com"),
 		},
 	}
 }
@@ -165,5 +168,5 @@ func main() {
 		return c.NoContent(200)
 	})
 
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start("127.0.0.1:8080"))
 }
