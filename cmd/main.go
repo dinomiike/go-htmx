@@ -116,14 +116,9 @@ func main() {
 	page := newPage()
 	e.Renderer = newTemplate()
 
-	e.GET("/", func(c echo.Context) error {
-		count.Count++
-		return c.Render(http.StatusOK, "index", count)
-	})
+	e.GET("/", handleIndex(&count))
 
-	e.GET("/contacts", func(c echo.Context) error {
-		return c.Render(http.StatusOK, "contacts", page)
-	})
+	e.GET("/contacts", handleContact(&page))
 
 	e.POST("/count", func(c echo.Context) error {
 		count.Count++
